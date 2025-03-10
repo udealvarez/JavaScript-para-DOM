@@ -1,0 +1,12 @@
+h1, h3{
+    color: rgb(10, 227, 64);
+    font-family: Verdana;
+}
+
+div{
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    background-color: red;
+
+}

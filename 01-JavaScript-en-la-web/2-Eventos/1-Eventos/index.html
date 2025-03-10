@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Digital House</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkCookies()">
+    <h1>Eventos</h1>
+    <p id="testeo"></p>
+
+    <p onclick="changeThisElement(this)">Haceme click</p>
+
+    <h4>La fecha de hoy es: </h4>
+    <p id="test"></p>
+
+    <button id="btn">Hazme click</button>
+    
+   <h3>Eventos en formulario</h3>
+
+   <form>
+    <label for="name">Nombre: </label>
+    <input type="text" id="name" oninput="upperCase()">
+   </form>
+
+   <h3>evento sibre el div</h3>
+
+   <div onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+        ponte arriba con el mouse
+   </div>
+
+   <input type="text" onfocus="changeStyle(this)">
+
+
+    <script src="script.js"></script>
+</body>
+</html>
