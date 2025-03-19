@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de Digital House</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Browser APIs: Form</h1> 
+
+    <input id="number" type="number" min="50" max="100" required>
+    <!--tenemos 3 validaciones:
+        - minimo = 50
+        - maximo = 100
+        - required = REQUERIDO (no puede estar vacio) -->
+
+    <button onclick="doValidation()">Es correcto el numero?</button>
+
+    <p>Si el numero es menor a 50 o menos 100, o nos olvidamos de ponerlo el error del navegador</p>
+    <p id="error"></p>
+
+    
+    
+   
+    <script src="script.js"></script>
+    
+</body>
+</html>
