@@ -1,8 +1,36 @@
-h1{
-    color: rgb(10, 227, 64);
-    font-family: Verdana;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 40px;
+    color: #333;
 }
 
-.colorado{
-    color: red;
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+#testeo {
+    color: #2980b9;
+    font-weight: bold;
+}
+
+#testeoDos {
+    color: #e74c3c;
+    font-style: italic;
+}
+
+.test1 {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
 }
