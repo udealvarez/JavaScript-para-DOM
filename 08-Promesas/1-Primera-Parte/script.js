@@ -1,4 +1,4 @@
-
+const number = prompt('completar con un numero del 1 al 10')
 
 const myPromise = new Promise ((resolve, reject) => {
 
@@ -9,13 +9,17 @@ const myPromise = new Promise ((resolve, reject) => {
             - "cosas que demoren"
     */
 
-    setTimeout(() => {
-        const sucess = true     // sucess -> exitoso
+    const random = Math.round(Math.random()*10)
 
-        if (sucess) {
-            resolve('esta operacion fue exitosa')
+    setTimeout(() => {
+        //const sucess = true     // sucess -> exitoso
+
+        if (random == number) {
+            resolve('ganaste el juego')
+        }else if(random > number){
+            reject(`el numero ${number} fue mas pequeno que ${random} `)
         }else{
-            reject('fallo la operacion')
+            reject(`el numero ${number} fue mas grande que ${random} `)
         }
     }, 5000);// 5 segundos
 })
@@ -23,10 +27,9 @@ const myPromise = new Promise ((resolve, reject) => {
 document.getElementById('loading').innerHTML = 'cargando...'
 
 myPromise.then(res => {
-    document.getElementById('loading').innerHTML = 'cargando...'
-    console.log(res)
+    document.getElementById('loading').innerHTML = ''
+    document.getElementById('response').innerHTML = res
 }).catch(error => {
-    console.error(error)
-}).finally(
-    console.log('esto se ejecuta siempre')
-)
+    document.getElementById('loading').innerHTML = ''
+    document.getElementById('response').innerHTML = error
+})
