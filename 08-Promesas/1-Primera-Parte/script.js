@@ -1,5 +1,6 @@
 const number = prompt('completar con un numero del 1 al 10')
 
+// esto es la promesa
 const myPromise = new Promise ((resolve, reject) => {
 
     /*
@@ -21,11 +22,13 @@ const myPromise = new Promise ((resolve, reject) => {
         }else{
             reject(`el numero ${number} fue mas grande que ${random} `)
         }
-    }, 5000);// 5 segundos
+    }, 500);// medio segundo
 })
 
 document.getElementById('loading').innerHTML = 'cargando...'
 
+
+// esto es como se resuelve la promesa
 myPromise.then(res => {
     document.getElementById('loading').innerHTML = ''
     document.getElementById('response').innerHTML = res
