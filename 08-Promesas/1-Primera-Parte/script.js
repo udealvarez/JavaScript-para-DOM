@@ -20,7 +20,10 @@ const myPromise = new Promise ((resolve, reject) => {
     }, 5000);// 5 segundos
 })
 
+document.getElementById('loading').innerHTML = 'cargando...'
+
 myPromise.then(res => {
+    document.getElementById('loading').innerHTML = 'cargando...'
     console.log(res)
 }).catch(error => {
     console.error(error)
